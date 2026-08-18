@@ -141,58 +141,6 @@ nav ul a {
 }
 /*HEADER END*/
 
-/*RESPONSİVE START*/
-
-@media (max-width: 1100px) {
-    #main {
-        margin-top: 20px;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    header {
-        position: static !important;
-        width: 100%;
-        height: auto;
-        padding: 20px 0;
-        background-color: rgba(0, 0, 0, 0.95);
-    }
-
-    header nav {
-        flex-direction: column;
-        gap: 15px;
-        width: 100%;
-        align-items: center;
-    }
-
-    header nav .logo img {
-        width: 70px;
-        height: auto;
-    }
-
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        width: 100%;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        width: 100%;
-    }
-
-    .menu ul a, .menu > a {
-        font-size: 14px;
-        padding: 8px 16px;
-        text-align: center;
-        width: 240px;
-    }
-}
-/*RESPONSİVE END*/
 
 /*INTRODUCTİON SECTION START*/
 
@@ -251,6 +199,7 @@ nav ul a {
 }
 
 /*INTRODUCTİON SECTION END*/
+
 
 /*CHAPTER SECTION START*/
 
@@ -540,3 +489,125 @@ footer .footer-social a:hover {
     color: aqua;
 }
 /*CHAPTER SECTION END*/
+
+
+/* =========================================
+   RESPONSIVE START
+   ========================================= */
+
+@media (max-width: 1100px) {
+    #main {
+        margin-top: 20px;
+        width: 95%;
+    }
+
+    header {
+        position: static !important;
+        height: auto;
+        padding: 15px 0;
+        background-color: rgba(0, 0, 0, 0.95);
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .menu ul a, .menu > a {
+        font-size: 14px;
+        padding: 10px 16px;
+        text-align: center;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .content-section {
+        flex-direction: column-reverse;
+        padding: 0 15px;
+        margin-top: 30px;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .text-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .text-content h1 {
+        font-size: 32px;
+    }
+
+    .text-content p {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .image-content img {
+        width: 250px;
+        height: 250px;
+    }
+
+    section, #about, #education, #skills, #certificates, #contact {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-top: 60px;
+        min-height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .text-content h1 {
+        font-size: 28px;
+    }
+
+    .image-content img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #about h1, #education h2, #skills h2, #certificates h2, #contact h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #about p, #contact p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .skills-grid, .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        margin-left: 10px;
+        padding-left: 20px;
+    }
+
+    .timeline-dot {
+        left: -29px;
+        width: 12px;
+        height: 12px;
+    }
+}
+/*RESPONSİVE END*/
