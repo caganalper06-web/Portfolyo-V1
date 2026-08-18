@@ -145,19 +145,18 @@ nav ul a {
 
 @media (max-width: 1100px) {
     #main {
-        margin-top: 240px;
+        margin-top: 40px;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
 
     header {
-        position: fixed;
-        top: 0;
-        left: 0;
+        position: relative;
         width: 100%;
         height: auto;
-        padding: 10px 0;
+        padding: 15px 0;
+        background-color: rgba(0, 0, 0, 0.95);
     }
 
     header nav {
@@ -185,12 +184,12 @@ nav ul a {
         gap: 10px;
         width: 100%;
     }
-    
+
     .menu ul a, .menu > a {
         font-size: 14px;
         padding: 6px 14px;
         text-align: center;
-        width: 200px;
+        width: 220px;
     }
 }
 /*RESPONSİVE END*/
