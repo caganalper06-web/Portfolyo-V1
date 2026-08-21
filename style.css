@@ -509,13 +509,14 @@ footer .footer-social a:hover {
     }
 
     header {
-        position: fixed !important;
+        position: static !important;
         height: auto;
         padding: 15px 0;
         background-color: rgba(0, 0, 0, 0.95);
     }
 
     header nav {
+        position: relative;
         flex-direction: row;
         gap: 15px;
     }
@@ -526,7 +527,7 @@ footer .footer-social a:hover {
 
     .menu {
         position: absolute;
-        top: 60px;
+        top: 100%;
         left: -100%;
         flex-direction: column;
         gap: 12px;
@@ -535,6 +536,7 @@ footer .footer-social a:hover {
         background-color: rgba(0, 0, 0, 0.95);
         padding-top: 30px;
         transition: 0.3s;
+        z-index: 1000;
     }
 
     .menu.active {
